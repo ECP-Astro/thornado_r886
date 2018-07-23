@@ -1,0 +1,5 @@
+GEOMETRY = \
+  GeometryFieldsModule.o \
+  GeometryComputationModule.o \
+  GeometryFieldsModuleE.o \
+  GeometryComputationModuleE.o

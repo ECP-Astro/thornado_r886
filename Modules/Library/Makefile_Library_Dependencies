@@ -1,0 +1,67 @@
+QuadratureModule.o: \
+  KindModule.o \
+  QuadratureModule.f90
+
+UtilitiesModule.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  UtilitiesModule.f90
+
+ReferenceElementModuleX.o: \
+  KindModule.o \
+  QuadratureModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModuleX.f90
+
+ReferenceElementModuleE.o: \
+  KindModule.o \
+  QuadratureModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModuleE.f90
+
+ReferenceElementModule.o: \
+  KindModule.o \
+  QuadratureModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModule.f90
+
+PolynomialBasisModule_Lagrange.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  QuadratureModule.o \
+  UtilitiesModule.o \
+  PolynomialBasisModule.f90
+
+PolynomialBasisModule_Legendre.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  PolynomialBasisModule_Legendre.f90
+
+ReferenceElementModuleX_Lagrange.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModuleX.o \
+  PolynomialBasisModule_Lagrange.o \
+  ReferenceElementModuleX_Lagrange.f90
+
+ReferenceElementModuleE_Lagrange.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModuleE.o \
+  PolynomialBasisModule_Lagrange.o \
+  ReferenceElementModuleE_Lagrange.f90
+
+ReferenceElementModule_Lagrange.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  ReferenceElementModuleE.o \
+  PolynomialBasisModule_Lagrange.o \
+  ReferenceElementModule_Lagrange.f90
+
+PolynomialBasisMappingModule.o: \
+  KindModule.o \
+  ProgramHeaderModule.o \
+  QuadratureModule.o \
+  PolynomialBasisModule_Lagrange.o \
+  PolynomialBasisModule_Legendre.o \
+  PolynomialBasisMappingModule.f90

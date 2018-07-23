@@ -1,0 +1,12 @@
+LIBRARY = \
+  QuadratureModule.o \
+  UtilitiesModule.o \
+  ReferenceElementModuleX.o \
+  ReferenceElementModuleE.o \
+  ReferenceElementModule.o \
+  PolynomialBasisModule_Lagrange.o \
+  PolynomialBasisModule_Legendre.o \
+  ReferenceElementModuleX_Lagrange.o \
+  ReferenceElementModuleE_Lagrange.o \
+  ReferenceElementModule_Lagrange.o \
+  PolynomialBasisMappingModule.o

@@ -1,0 +1,22 @@
+OpacityModule_IDEAL.o: \
+  KindModule.o \
+  OpacityModule_IDEAL.f90
+
+OpacityModule_TABLE.o: \
+  KindModule.o \
+  UnitsModule.o \
+  OpacityModule_TABLE.f90
+
+OpacityModule.o: \
+  KindModule.o \
+  OpacityModule_IDEAL.o \
+  OpacityModule_TABLE.o \
+  OpacityModule.f90
+
+NeutrinoOpacitiesModule.o: \
+  KindModule.o \
+  NeutrinoOpacitiesModule.f90
+
+NeutrinoOpacitiesComputationModule.o: \
+  NeutrinoOpacitiesModule.o \
+  NeutrinoOpacitiesComputationModule.f90
